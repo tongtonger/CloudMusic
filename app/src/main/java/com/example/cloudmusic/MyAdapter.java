@@ -22,6 +22,7 @@ public class MyAdapter extends BaseAdapter {
         return list.size();
     }
 
+    
     @Override
     public Object getItem(int i) {
         return list.get(i);

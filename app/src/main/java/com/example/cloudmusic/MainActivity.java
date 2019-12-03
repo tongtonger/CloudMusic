@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new MusicDatabaseHelper(this, "SongPaper.db", null, 1);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
+
         String sql = "insert into paper(id, name) values(1, '默认歌单')";
         String sql1 = "select * from paper where id = 1";
         Cursor cursor = db.rawQuery(sql1, new String[]{});
